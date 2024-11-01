@@ -1,0 +1,2 @@
+# -*- coding: latin-1 -*-
+# Utwórz listê s³ów i wykorzystaj s³ownik, aby policzyæ, ile razy ka¿de s³owo pojawia siê w tej liœcie. Wynikowy s³ownik powinien przechowywaæ s³owa jako klucze, a liczby wyst¹pieñ jako wartoœci.
