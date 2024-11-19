@@ -31,3 +31,31 @@ school = {"Class A":
          }
 
 print(school)
+
+school["Class D"] = {"English":
+                        ["Hsii", "Pauli", "Nik", "Collman"],
+                     "Polish":
+                        ["Collman", "Solt", "Pauli", "Patta"],
+                     "History":
+                        ["Kix", "Hsii", "Leoaa", "Solt"],
+                     "Music":
+                        ["Hsii", "Kix"]}
+
+print(school)
+print("")
+
+for class_name, lessons in school.items():
+    for subject, students in lessons.items():
+        if "Paol" in students:
+            students.remove("Paol")
+
+print(school)
+print("")
+
+music_students = []
+
+for class_name, lessons in school.items():
+    if "Music" in lessons:
+        music_students.extend(lessons["Music"])
+
+print("Uczniowie zapisani na muzyke we wszystkich klasach:", set(music_students))
